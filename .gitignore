@@ -1,10 +1,6 @@
 # Shopify CLI
 .shopify/
 .shopify.lock
-.github
-.prettierrc.json
-LICENSE.md
-release-notes.md
 
 # Node / tooling
 node_modules/
