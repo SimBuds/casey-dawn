@@ -1,0 +1,86 @@
+/* =========================================
+   AB — GLOBAL OVERRIDES (SAFE FOR DAWN)
+   File: assets/ab-overrides.css
+   ========================================= */
+
+:root {
+  --ab-accent: 51, 79, 180; /* #334FB4 */
+}
+
+/* -----------------------------------------
+   Typography system
+   ----------------------------------------- */
+h1, h2, h3, h4, h5,
+.h0, .h1, .h2, .h3, .h4, .h5,
+.section-header__title,
+.banner__heading {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+}
+
+.button,
+.header__menu-item,
+.menu-drawer__menu-item {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+}
+
+body,
+.rte {
+  letter-spacing: 0.01em;
+}
+
+/* -----------------------------------------
+   Links (scoped — do NOT color all <a>)
+   ----------------------------------------- */
+.rte a,
+.link--text {
+  color: rgb(var(--ab-accent));
+}
+
+/* Header menu: keep scheme color, accent on hover only */
+.header__menu-item {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.header__menu-item:hover {
+  color: rgb(var(--ab-accent));
+}
+
+/* -----------------------------------------
+   Buttons (polish only)
+   ----------------------------------------- */
+.button {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+/* -----------------------------------------
+   Hero / feature glow utility (opt-in)
+   ----------------------------------------- */
+.ab-gradient-lux {
+  background:
+    radial-gradient(1200px 600px at 50% 0%, rgba(51, 79, 180, 0.28), rgba(0, 0, 0, 0) 60%),
+    linear-gradient(180deg, #121212, #121212);
+}
+
+/* -----------------------------------------
+   Section rhythm (Dawn-safe)
+   ----------------------------------------- */
+.shopify-section > .page-width {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+@media (min-width: 990px) {
+  .shopify-section > .page-width {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
