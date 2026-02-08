@@ -1,0 +1,18 @@
+# Shopify CLI
+.shopify/
+.shopify.lock
+
+# Node / tooling
+node_modules/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Env
+.env
+.env.*
