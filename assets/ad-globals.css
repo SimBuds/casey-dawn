@@ -1,15 +1,10 @@
-/* =========================================
-   AB — GLOBAL OVERRIDES (SAFE FOR DAWN)
-   File: assets/ab-overrides.css
-   ========================================= */
+/* AD — GLOBAL OVERRIDES */
 
 :root {
   --ab-accent: 51, 79, 180; /* #334FB4 */
 }
 
-/* -----------------------------------------
-   Typography system
-   ----------------------------------------- */
+/* Typography */
 h1, h2, h3, h4, h5,
 .h0, .h1, .h2, .h3, .h4, .h5,
 .section-header__title,
@@ -32,15 +27,13 @@ body,
   letter-spacing: 0.01em;
 }
 
-/* -----------------------------------------
-   Links (scoped — do NOT color all <a>)
-   ----------------------------------------- */
+/* Links */
 .rte a,
 .link--text {
   color: rgb(var(--ab-accent));
 }
 
-/* Header menu: keep scheme color, accent on hover only */
+/* Header */
 .header__menu-item {
   color: inherit;
   transition: color 0.2s ease;
@@ -50,9 +43,7 @@ body,
   color: rgb(var(--ab-accent));
 }
 
-/* -----------------------------------------
-   Buttons (polish only)
-   ----------------------------------------- */
+/* Buttons */
 .button {
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
@@ -61,18 +52,14 @@ body,
   transform: translateY(-1px);
 }
 
-/* -----------------------------------------
-   Hero / feature glow utility (opt-in)
-   ----------------------------------------- */
+/* Hero / feature glow utility */
 .ab-gradient-lux {
   background:
     radial-gradient(1200px 600px at 50% 0%, rgba(51, 79, 180, 0.28), rgba(0, 0, 0, 0) 60%),
     linear-gradient(180deg, #121212, #121212);
 }
 
-/* -----------------------------------------
-   Section rhythm (Dawn-safe)
-   ----------------------------------------- */
+/* Section rhythm */
 .shopify-section > .page-width {
   padding-top: 64px;
   padding-bottom: 64px;
