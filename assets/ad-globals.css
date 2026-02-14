@@ -1,1 +1,85 @@
 /* AD — GLOBAL OVERRIDES */
+
+/* ===========================
+   TYPOGRAPHY
+   =========================== */
+
+/* Headings*/
+h1 {
+  text-transform: capitalize !important;
+  letter-spacing: 8px !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  line-height: 48px !important;
+}
+
+/* Body Text - No Force */
+body,
+p,
+.rte {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+
+/* ===========================
+   BUTTONS - Force Override
+   =========================== */
+
+/* Base Button Styles */
+.button,
+.shopify-payment-button__button {
+  font-size: 16px !important;
+  padding: 1.2rem 2.4rem !important;
+  border-radius: 100px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Primary Button - Filled */
+.button--primary {
+  background-color: #4A5F7F !important;
+  color: #FFFFFF !important;
+  border: 1px solid #4A5F7F !important;
+}
+
+/* Secondary Button - Outline */
+.button--secondary {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: #FFFFFF !important;
+}
+
+/* Secondary on Light Background */
+.section-template--light .button--secondary,
+.color-scheme-1 .button--secondary {
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Tertiary Button - Link Style */
+.button--tertiary {
+  background-color: transparent !important;
+  color: currentColor !important;
+  padding-left: 0 !important;
+}
+
+.button--tertiary::after {
+  content: " →" !important;
+  margin-left: 8px !important;
+}
+
+/* Hover States */
+.button:hover {
+  opacity: 0.9 !important;
+  transform: translateY(-2px) !important;
+}
+
+.button--secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
