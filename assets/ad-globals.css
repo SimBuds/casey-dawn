@@ -83,3 +83,12 @@ p,
 .button--secondary:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
 }
+
+/* Change "Add to Cart" to "Start Customizing" */
+.product-form__submit::before {
+  content: "START CUSTOMIZING";
+}
+
+.product-form__submit .add-to-cart-text {
+  display: none;
+}
