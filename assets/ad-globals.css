@@ -1,94 +1,111 @@
-/* AD — GLOBAL OVERRIDES */
+/* Atelier Dacko — CSS Globals */
 
-/* ===========================
-   TYPOGRAPHY
-   =========================== */
+/* Heading 1 */
+h1, .h1 {
+  color: #FFFFFF;
+  font-family: var(--font-heading-family);
+  font-size: 3.0rem;
+  font-weight: 700;
+  line-height: 4.25rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
 
-/* Headings*/
-h1 {
+/* Heading 2 */
+h2, .h2 {
+  color: #FFFFFF;
+  font-family: var(--font-heading-family);
+  font-size: 2.8rem;      /* 28px */
+  font-weight: 600;
+  line-height: 3.76rem;   /* 37.6px */
+  letter-spacing: 4.512px;
+  text-transform: uppercase;
+}
+
+/* Body Text & Global Font Color */
+body, p, .rte, .product__description {
+  color: #808080;
+  font-family: var(--font-body-family);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+/* Navigation Links */
+.header__menu-item,
+.list-menu__item,
+.menu-drawer__menu-item {
   text-transform: capitalize !important;
-  letter-spacing: 8px !important;
-  font-weight: 700 !important;
-  font-size: 24px !important;
-  line-height: 48px !important;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #FFFFFF;
 }
 
-/* Body Text - No Force */
-body,
-p,
-.rte {
-  font-size: 18px;
-  line-height: 32px;
-}
-
-
-/* ===========================
-   BUTTONS - Force Override
-   =========================== */
-
-/* Base Button Styles */
+/* Buttons */
 .button,
 .shopify-payment-button__button {
-  font-size: 16px !important;
-  padding: 1.2rem 2.4rem !important;
-  border-radius: 100px !important;
-  font-weight: 600 !important;
-  letter-spacing: 1px !important;
-  text-transform: uppercase !important;
-  transition: all 0.3s ease !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  font-size: 1.5rem;
+  padding: 1.2rem 2.8rem;
+  border-radius: 44px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.27rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-/* Primary Button - Filled */
 .button--primary {
-  background-color: #4A5F7F !important;
-  color: #FFFFFF !important;
-  border: 1px solid #4A5F7F !important;
+  background-color: #4A5F7F;
+  color: #FFFFFF;
+  border: 1px solid #4A5F7F;
 }
 
-/* Secondary Button - Outline */
 .button--secondary {
-  background-color: transparent !important;
-  border: 1px solid rgba(255, 255, 255, 0.3) !important;
-  color: #FFFFFF !important;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
 }
 
-/* Secondary on Light Background */
-.section-template--light .button--secondary,
-.color-scheme-1 .button--secondary {
-  border: 1px solid rgba(0, 0, 0, 0.15) !important;
-  color: rgba(0, 0, 0, 0.6) !important;
-}
-
-/* Tertiary Button - Link Style */
-.button--tertiary {
-  background-color: transparent !important;
-  color: currentColor !important;
-  padding-left: 0 !important;
-}
-
-.button--tertiary::after {
-  content: " →" !important;
-  margin-left: 8px !important;
-}
-
-/* Hover States */
 .button:hover {
-  opacity: 0.9 !important;
-  transform: translateY(-2px) !important;
+  opacity: 0.85;
+  transform: translateY(-1px);
 }
 
-.button--secondary:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
+/* -Header Layout */
+.header {
+  display: grid !important;
+  align-items: center;
 }
 
-/* Change "Add to Cart" to "Start Customizing" */
-.product-form__submit::before {
-  content: "START CUSTOMIZING";
+/* Desktop: Logo-Left | Menu-Center | Icons-Right */
+@media screen and (min-width: 990px) {
+  .header {
+    grid-template-columns: 1fr auto 1fr !important;
+    column-gap: 4rem;
+  }
+  .header__inline-menu { justify-content: center; display: flex; }
+  .header__heading { justify-content: flex-start; display: flex; }
+  .header__icons { justify-content: flex-end; display: flex; }
 }
 
-.product-form__submit .add-to-cart-text {
-  display: none;
+/* Mobile: Hamburger-Left | Logo-Center | Icons-Right */
+@media screen and (max-width: 989px) {
+  .header { grid-template-columns: 1fr 2fr 1fr !important; }
+  .header__heading { text-align: center; justify-content: center; }
+
+  h1, .h1 {
+    font-size: 2.4rem;
+    letter-spacing: 4px;
+  }
+}
+
+/* Cleanup (Hide Unused UI) */
+.header__icon--search,
+.header__icon--cart,
+.header__icon--account {
+  display: none !important;
 }

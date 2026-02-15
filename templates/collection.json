@@ -42,8 +42,8 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/d3ffa61f473eea93b50372340f18d85d63688049.jpg",
-        "height": "adapt",
+        "image": "shopify://shop_images/custom-profile-hero.jpg",
+        "height": "small",
         "desktop_image_width": "small",
         "layout": "text_first",
         "image_behavior": "none",
