@@ -9,15 +9,55 @@
  */
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
+    "image_with_text_EikHX7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_yBgAGX": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Portfolio: Get Inspired By Our Latest Creations",
+            "heading_size": "h1"
+          }
+        },
+        "text_HBTagk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We take the time to listen to our clients and create a personalized experience from concept to design that is sure to impress</p>",
+            "text_style": "body"
+          }
+        },
+        "button_mGtdGg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Start Customizing",
+            "button_link": "shopify://blogs/news",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yBgAGX",
+        "text_HBTagk",
+        "button_mGtdGg"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "show_collection_description": true,
-        "show_collection_image": true,
-        "color_scheme": "scheme-1"
+        "image": "shopify://shop_images/d3ffa61f473eea93b50372340f18d85d63688049.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "product-grid": {
+    "product_grid": {
       "type": "main-collection-product-grid",
       "settings": {
         "products_per_page": 16,
@@ -33,13 +73,13 @@
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     }
   },
   "order": [
-    "banner",
-    "product-grid"
+    "image_with_text_EikHX7",
+    "product_grid"
   ]
 }
