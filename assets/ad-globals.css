@@ -37,7 +37,7 @@ body, p, .rte, .product__description {
 .header__menu-item,
 .list-menu__item,
 .menu-drawer__menu-item {
-  text-transform: capitalize !important;
+  text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 1px;
@@ -107,5 +107,11 @@ body, p, .rte, .product__description {
 .header__icon--search,
 .header__icon--cart,
 .header__icon--account {
+  display: none !important;
+}
+
+/* Pricing Hide - Temp Fix* */
+.card__information .price,
+.card-information .price {
   display: none !important;
 }
