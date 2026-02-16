@@ -57,6 +57,14 @@
         "padding_bottom": 0
       }
     },
+    "ad_category_rnP6ae": {
+      "type": "ad-category",
+      "name": "AD - Category Buttons",
+      "settings": {
+        "heading": "FILTER BY CATEGORY",
+        "menu": "collection-categories"
+      }
+    },
     "product_grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -80,6 +88,7 @@
   },
   "order": [
     "image_with_text_EikHX7",
+    "ad_category_rnP6ae",
     "product_grid"
   ]
 }

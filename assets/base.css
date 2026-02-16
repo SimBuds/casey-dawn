@@ -3595,3 +3595,23 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* Collection grid: Featured product tile */
+@media screen and (min-width: 990px) {
+  .product-grid .grid__item.is-featured {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .product-grid .grid__item.is-featured .card,
+  .product-grid .grid__item.is-featured .card__inner,
+  .product-grid .grid__item.is-featured .card__media,
+  .product-grid .grid__item.is-featured .media {
+    height: 100%;
+  }
+
+  .product-grid .grid__item.is-featured .media img {
+    height: 100%;
+    object-fit: cover;
+  }
+}

@@ -59,7 +59,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "all",
+        "collection": "automated-collection",
         "products_to_show": 4,
         "title": "Shop Our Collection",
         "heading_size": "h2",
