@@ -47,22 +47,23 @@
         "desktop_image_width": "small",
         "layout": "text_first",
         "image_behavior": "none",
-        "content_layout": "overlap",
-        "desktop_content_position": "bottom",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
         "mobile_content_alignment": "center",
         "section_color_scheme": "",
         "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     },
     "ad_category_rnP6ae": {
       "type": "ad-category",
       "name": "AD - Category Buttons",
       "settings": {
-        "heading": "FILTER BY CATEGORY",
-        "menu": "collection-categories"
+        "heading": "Filter By Category",
+        "menu": "collection-categories",
+        "color_scheme": ""
       }
     },
     "product_grid": {
